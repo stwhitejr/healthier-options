@@ -1,0 +1,15 @@
+mealCat,mealName,mealDesc,nutrFat,nutrSatFat,nutrCarb,nutrSugar,nutrProtein,nutrCal,mealExtLink,mealImage,mealRating
+High Protein,Double Quarter Pounder with Cheese,Not the best choice as it's very high in fat but if you need the calories it's a good choice.,42,19,43,10,47,740,NULL,NULL,3
+High Protein,Premium Grilled Chicken Club*,Well rounded choice. Plenty of protein not too much fat and the calories aren't outrageous.,20,7,44,9,40,510,NULL,NULL,9
+High Protein,Premium Grilled Chicken Bacon Clubhouse Sandwich,Slightly worse for you than the Premium Grilled Chicken Club. Same amount of protein but 80 more calories and a lot of that seems to be coming from sugar.,590,25,8,14,40,590,NULL,NULL,7
+High Protein,Bacon Clubhouse Burger,The chicken sandwiches are always going to be your better bet but if you’re a burger guy here's an option.,40,15,52,14,38,720,NULL,NULL,4
+Gluten Free,Premium Southwest Salad with Grilled Chicken,,,,,,,,,,
+Gluten Free,Premium Bacon Ranch Salad with Grilled Chicken,,,,,,,,,,
+Gluten Free,Premium Bacon Ranch Salad,,,,,,,,,,
+Gluten Free,Premium Southwest Salad,,,,,,,,,,
+Low Calorie,Premium Bacon Ranch Salad,,,,,,,,,,
+Low Calorie,Premium Bacon Ranch Salad with Grilled Chicken,,,,,,,,,,
+Low Calorie,Hamburger,,,,,,,,,,
+Low Calorie,Egg White Delight McMuffin,,,,,,,,,,
+Low Calorie,Snack Wraps,,,,,,,,,,
+Low Calorie,Premium Southwest Salad with Grilled Chicken,,,,,,,,,,

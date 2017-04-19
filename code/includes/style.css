@@ -1,0 +1,357 @@
+body {
+  background-color:#f2f2f4;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color:#616161;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+p {
+  margin: 0;
+}
+a {
+  color:#00a5a9;
+  text-decoration: none;
+}
+.clear:before, 
+.clear:after {
+  clear: both;
+  content: '';
+  display:block;
+}
+.white {
+  color:#ffffff;
+}
+.fontSec {
+  font-family: 'Montserrat', sans-serif;
+}
+.wrap {
+    margin: 0 auto;
+    width: 700px;
+    padding:0 10px;
+}
+.logoBox {
+    margin: 15px 0 10px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px #4d4d4f;
+    padding: 10px;
+    text-align:center;
+}
+.introTextBox {
+    padding: 10px 10px 20px;
+    color:#838383;
+    width: 100%;
+    margin: 0 auto;
+    font-size:220%;
+}
+.mainBox {
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px #4d4d4f;
+    padding: 10px;
+    margin:10px 0 0;
+}
+.searchBox {
+    width: 90%;
+    margin:0 auto 20px;
+}
+.form-search {
+  position:relative;
+}
+.topBarSearch .searchBox {
+  width:100%;
+  margin:0 auto;
+}
+.searchBar {
+    border-radius: 3px;
+    background-color:#ffffff;
+    color:#4d4d4f;
+    border: none;
+    width:70%;
+    box-shadow: 0px 0px 1px #4d4d4f;
+    padding: 2%;
+}
+#livesearch {
+  position: absolute;
+  z-index: 99;
+}
+.searchBar div {
+  padding-bottom: 3px;
+}
+.searchBar div:hover,
+.searchBar div.searchSelected,
+.callout {
+  color:#00a5a9;
+  font-weight:bold;
+}
+.searchBarSubmit {
+    border-radius: 3px;
+    background-color:#00a5a9;
+    color:#ffffff;
+    border: none;
+    width:20%;
+    box-shadow: 0px 0px 1px #4d4d4f;
+    padding: 2%;
+    margin-left:2%;
+}
+.borderBotBox {
+    padding: 10px 0;
+    border-bottom:solid 1px #d1d1d1;
+    margin-bottom:10px;
+    color:#505050;
+}
+.mealOptions {
+    color:#505050;
+    padding: 55px 0 0 14px;
+    font-size: 90%;
+}
+.topBarSearch .mealOptions {
+  padding: 45px 0 0;
+}
+.topBarSearch .callout {
+  display: none;
+}
+.mealOptions span,
+.mealOptions label {
+  vertical-align: text-top;
+  margin-top:-2px;
+  display: inline-block;
+}
+.dataTable {
+  width:100%;
+  border-spacing:0;
+  border-collapse: collapse;
+}
+.dataTable tr {
+  background-color:#fcfcfc;
+}
+.dataTable td {
+  padding:13px 10px;
+  border-bottom:solid 1px #ddd;
+}
+.restCell {
+  width:45%;
+  border-right:solid 2px #ddd;
+  font-size:170%;
+}
+.linkCell {
+  width:45%;
+  border-right:solid 2px #ddd;
+}
+.mealCell {
+  width:10%;
+  font-style:italic;
+}
+.dataTable .headCell {
+  font-weight:bold;
+  background-color:#eee;
+  border-bottom: none;
+  font-style:none;
+  font-size:100%;
+}
+.btnCategory {
+  border-radius: 3px;
+  background-color:#00a5a9;
+  color:#ffffff;
+  border: none;
+  width:30%;
+  box-shadow: 0px 0px 1px #4d4d4f;
+  padding: 8px;
+  margin-left:2%;
+  font-size:90%;
+}
+.h1 {
+  font-size: 120%;
+  font-weight: bold;
+  color:#838383;
+}
+.viewAllRest {
+  font-weight:normal;
+  font-size:80%;
+}
+
+/*Meal Results*/
+.restTitleBox {
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px #4d4d4f;
+  padding: 10px;
+  margin-top:10px;
+}
+.restTitle {
+  float:left;
+  width:60%;
+}
+.restTitle h2 {
+  font-size: 80%;
+  color:#838383;
+}
+.restTitle h1 {
+  font-size: 250%;
+  color:#00a5a9;
+  font-weight:bold;
+  text-transform: capitalize;
+}
+.restTitleCats {
+  float:left;
+  width:40%;
+  text-align: right;
+}
+.pagination {
+  padding-bottom:5px;
+  font-size: 80%;
+}
+
+.mealBox {
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px #4d4d4f;
+  padding: 3%;
+  float:left;
+  width:43%;
+  margin-top:15px;
+}
+.mealBox:nth-child(odd) {
+  clear:left;
+  margin-right: 2%;
+}
+.mealName h2 {
+  font-size: 80%;
+  color:#838383;
+}
+.mealName h1 {
+  font-size: 150%;
+  color:#00a5a9;
+  font-weight:bold;
+  text-transform: capitalize;
+}
+.mealRating img {
+  margin-left:-3px;
+}
+.mealDesc {
+  font-size: 80%;
+  color:#838383;
+  margin:2px 0 10px;
+}
+.mealData h2 {
+  background-color:#eee;
+  font-weight:bold;
+  padding:10px;
+}
+.mealDataTable {
+  background-color:#fcfcfc;
+}
+.mealDataCell {
+  border-bottom: solid 1px #ddd;
+  padding:10px 10px 10px 20px;
+}
+.mealDataName {
+  font-weight:bold;
+}
+
+/*Top bar*/
+.logoSmall {
+  float: left;
+  width: 40%;
+}
+
+/*Search*/
+.searchTerm {
+  font-weight:normal;
+  font-style:italic;
+}
+.topBarSearch {
+  width:60%;
+  float:left;
+  text-align: left;
+  margin-top:20px;
+}
+.topbarSearchTitle {
+  font-weight:bold;
+  font-size:90%;
+  color:#838383;
+  padding-bottom: 3px;
+}
+.searhResultsPagination {
+  margin:10px 0;
+}
+
+/*Footer */
+.mealResultsFooter {
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px #4d4d4f;
+  padding: 3%;
+  width:94%;
+  margin:15px 0 10px;
+}
+.paginationLinksFooter {
+  text-align:right;
+  font-size: 120%;
+  float:left;
+  width:50%;
+}
+.paginationInfoFooter {
+  text-align:left;
+  font-size: 120%;
+  float:left;
+  width:50%;
+}
+.footerIntro {
+  font-size: 90%;
+  padding:20px 10px 0;
+}
+.footer {
+  padding: 10px;
+  text-align:center;
+  margin-bottom:5px;
+}
+
+/*Contact */
+.contactIntro {
+  font-size: 220%;
+  text-align:center;
+  padding:10px;
+  color:##838383;
+}
+
+.contactCTA {
+  padding:10px;
+  text-align:center;
+}
+.contactCTA a {
+  display:block;
+  width:200px;
+  height:50px;
+  background-color:#00a5a9;
+  color:#ffffff;
+  font-size:150%;
+  font-weight:bold;
+  text-align:center;
+  margin:0 auto;
+  line-height: 50px;
+  border-radius: 3px;
+}
+
+/*policy*/
+.policyBody {
+  padding:0 10px;
+}
+.policyBody p {
+  margin:10px 0;
+}
+
+.policyBody h3 {
+  font-size:110%;
+  font-weight: bold;
+}
+
+/*ads*/
+.homeAd {
+  padding:5px 0;
+}

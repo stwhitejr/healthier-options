@@ -1,0 +1,35 @@
+<table>
+<tr><td>Burger King</td><td>1</td><td>0</td><td>0</td><td>Name</td><td>desc</td><td>fat</td><td>sat fat</td><td>carb</td><td>sugar</td><td>protein</td><td>calories</td><td>NULL</td><td>NULL</td><td>0</td>
+</table>
+
+javascript:(function(){
+console.clear();
+$('.edit-food').remove();
+var name = $( ".food-title h1" ).html();
+var calories = $( "span.miniCal" ).html();
+var fat = $( "span.miniFat" ).html();
+var satFat = $( "span.miniSFat" ).html();
+var chol = $( "span.miniChol" ).html();
+var sodium = $( "span.miniSodium" ).html();
+var carb = $( "span.miniCarb" ).html();
+var fiber = $( "span.miniFiber" ).html();
+var sugar = $( "span.miniSugar" ).html();
+var protein = $( "span.miniProtein" ).html();
+console.log('<tr><td>p</td><td>g</td><td>c</td><td>',name.trim(),'</td><td></td><td>',fat,'</td><td>',satFat,'</td><td>',chol,'</td><td>',sodium,'</td><td>',carb,'</td><td>',fiber,'</td><td>',sugar,'</td><td>',protein,'</td><td>',calories,'</td><td>NULL</td><td>NULL</td><td>0</td><td>0</td></tr>');})();
+
+javascript:(function(){
+$('ol').css({'position': 'absolute', 'top': '0'});
+})();
+
+<td> 82 </td><td> 32 </td><td> 52 </td><td> 11 </td><td> 71 </td><td> 1230 </td>
+
+TO DO:
+if calories = x and Protein = y then desc = High protein with great calorie ratio!
+if calories = a and protein = b then desc = Lots of protein but high in calories.
+
+calories * 6% = a
+if x <= protein { desc = high protein to calorie ratio }
+if x >= protein { desc = Not a great protein to calorie ratio }
+
+calories * 10% = b
+if b <= protein { desc = WOWZA lots of protein here!}

@@ -1,0 +1,283 @@
+body {
+    color: #222226;
+    font-family: 'open sans', arial, sans-serif;
+    margin: 0;
+    font-size: 13px;
+    /*background: url(images/background.jpg) no-repeat top center;*/
+    background-size: cover;
+  }
+  a {
+    text-decoration: underline;
+    color: #fff;
+  }
+  .bg_white a {
+    color: #1668B2;
+  }
+  p {
+    margin: 0;
+  }
+  table {
+    border-collapse:collapse;
+    border-spacing:0;
+    padding:0;
+  }
+  .pos_rel {
+    position: relative;
+  }
+  /*Utility Classes*/
+  .box_sm {
+    padding: 5px;
+  }
+  .box_md {
+    padding: 10px;
+  }
+  .box_lg {
+    padding: 15px;
+  }
+  .box_xl {
+    padding: 20px;
+  }
+  .box_sm_tb {
+    padding: 5px 0;
+  }
+  .box_md_tb {
+    padding: 10px 0;
+  }
+  .box_lg_tb {
+    padding: 15px 0;
+  }
+  .box_xl_tb {
+    padding: 20px 0;
+  }
+  .margintop_sm {
+    margin-top: 5px;
+  }
+  .margintop_md {
+    margin-top: 10px;
+  }
+  .margintop_lg {
+    margin-top: 15px;
+  }
+  .marginbot_sm {
+    margin-bottom: 5px;
+  }
+  .marginbot_md {
+    margin-bottom: 10px;
+  }
+  .marginbot_lg {
+    margin-bottom: 15px;
+  }
+  .centerblock {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clear {
+    clear: both;
+  }
+  .clear:after,
+  .clear:before {
+    content: " ";
+    display: table;
+    clear: both
+  }
+  .fl {
+    float: left;
+  }
+  .fr {
+    float: right;
+  }
+  .block {
+    display: block;
+  }
+  .inline_block {
+    display: inline-block;
+  }
+  .table {
+    display: table;
+  }
+  .table_cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .divider {
+    border-bottom: dashed 2px #73A4D1;
+    margin-bottom: 5px;
+  }
+  .divider_tb {
+    border: dashed 2px #73A4D1;
+    border-left: none;
+    border-right: none;
+    margin: 5px;
+  }
+
+  /*layout*/
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .list_2col li {
+    width: 48%;
+    float: left;
+  }
+  .list_2col li:nth-child(odd) {
+    padding-right: 2%;
+  }
+  .list_4col li {
+    width: 24%;
+    float: left;
+    padding-right: 1%;
+  }
+  .width_2col {
+    width: 48%;
+    padding-right: 1%;
+  }
+  .width_3col {
+    width: 32%;
+    padding-right: 1%;
+  }
+  .width_4col {
+    width: 24%;
+    padding-right: 1%;
+  }
+  .width_50 {
+    width: 50%
+  }
+
+  /*Colors*/
+  .bg_white {
+    background-color: #fff;
+  }
+  .bg_primary {
+    background-color: #1668B2;
+  }
+  .bg_primary_fade {
+    background-color:rgba(22, 104, 178, 0.2)
+  }
+  .bg_primary_lt {
+    background-color: #4586C1;
+  }
+  .bg_secondary {
+    background-color: #EFC969 ;
+  }
+  .bg_secondary_lt {
+    background-color: #F5DB9B;
+  }
+  .bg_gray_lt {
+    background-color: #E8E8E8;
+  }
+  .white {
+    color: #fff;
+  }
+  .primary {
+    color: #1668B2;
+  }
+  .primary_lt {
+    color: #4586C1;
+  }
+  .secondary {
+    color: #EFC969 ;
+  }
+  .secondary_lt {
+    color: #F5DB9B;
+  }
+
+  /*Text*/
+  .font_2 {
+    font-family: 'winterthurcondensed', arial, sans-serif;
+  }
+  .xstext, h4 {
+    font-size: 80%;
+  }
+  .mdtext, h3 {
+    font-size: 110%;
+  }
+  .ltext, h2 {
+    font-size: 125%;
+  }
+  .xltext, h1 {
+    font-size: 150%;
+  }
+  .emphasis {
+    font-weight: bold;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .upper {
+    text-transform: uppercase;
+  }
+  .centertext {
+    text-align: center;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin:0;
+  }
+
+  /*Forms*/
+  input {
+    padding: 10px;
+    border: none;
+    background-color: #EDEDED;
+  }
+
+  /*Buttons*/
+  .primary_btn {
+    background-color: #04AC7E;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+  }
+
+  /*TopBar*/
+  .logo {
+    width: 300px; 
+    height: 70px;
+    margin-right: 20px;
+  }
+  .topbar_meal_form .searchbar {
+    width: 400px;
+  }
+
+  /*Shell*/
+  #shell {
+    width: 970px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .content_wrap,
+  .header {
+    margin-top: 10px;
+  }
+  .content_main {
+    width: 590px;
+  }
+  .content_side {
+    width: 320px;
+    margin-left: 10px;
+  }
+
+  /*Homepage*/
+  .stepone_search {
+    width: 300px;
+    padding: 5px;
+  }
+  .stepone_searchbtn {
+    padding: 5px 10px;
+  }
+
+  /*Search*/
+  .restaurant_btn {
+    width: 300px;
+  }
+  .cat_btn {
+    width: 80px;
+  }
+
+  /*Meal results*/
+  .ni_table td {
+    padding-bottom: 2px;
+  }
+  .ni_value {
+    padding-left: 25px;
+  }

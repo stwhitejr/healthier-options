@@ -1,0 +1,31 @@
+body {
+  background-color:#f2f2f4;
+  margin: 0;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  color:#616161;
+}
+.wrap {
+  margin: 0 auto;
+  width: 94%;
+  padding:0 3%;
+}
+.mealBox {
+  padding: 2%;
+  width:45%;
+  margin-top:15px;
+}
+.mealBox:nth-child(odd) {
+  clear:left;
+  margin-right: 2%;
+}
+.footerIntro {
+  font-size: 70%;
+  padding:20px 10px 0;
+}
+.footer {
+  font-size:60%;
+}
+.borderBotBox.h1 {
+  font-size:50%;
+}

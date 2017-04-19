@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+  body {
+    color: #222226;
+    font-family: 'open sans', arial, sans-serif;
+    margin: 0;
+    font-size: 13px;
+  }
+  a {
+    text-decoration: none;
+  }
+  /*Utility Classes*/
+  .box_sm {
+    padding: 5px;
+  }
+  .box_md {
+    padding: 10px;
+  }
+  .box_lg {
+    padding: 15px;
+  }
+  .box_xl {
+    padding: 20px;
+  }
+  .box_sm_tb {
+    padding: 5px 0;
+  }
+  .box_md_tb {
+    padding: 10px 0;
+  }
+  .box_lg_tb {
+    padding: 15px 0;
+  }
+  .box_xl_tb {
+    padding: 20px 0;
+  }
+  .margintop_sm {
+    margin-top: 5px;
+  }
+  .margintop_md {
+    margin-top: 10px;
+  }
+  .margintop_lg {
+    margin-top: 15px;
+  }
+  .centerblock {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clear {
+    clear: both;
+  }
+  .clear:after,
+  .clear:before {
+    content: " ";
+    display: table;
+    clear: both
+  }
+  .fl {
+    float: left;
+  }
+  .fr {
+    float: right;
+  }
+  .block {
+    display: block;
+  }
+  .inline_block {
+    display: inline-block;
+  }
+  .divider {
+    border-bottom: dashed 2px #73A4D1;
+    margin-bottom: 5px;
+  }
+  .divider_tb {
+    border: dashed 2px #73A4D1;
+    border-left: none;
+    border-right: none;
+    margin: 5px;
+  }
+
+  /*layout*/
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .list_2col li {
+    width: 48%;
+    float: left;
+  }
+  .list_2col li:nth-child(odd) {
+    padding-right: 2%;
+  }
+  .list_4col li {
+    width: 24%;
+    float: left;
+    padding-right: 1%;
+  }
+  .width_2col {
+    width: 48%;
+    padding-right: 1%;
+  }
+  .width_3col {
+    width: 32%;
+    padding-right: 1%;
+  }
+  .width_4col {
+    width: 24%;
+    padding-right: 1%;
+  }
+
+  /*Colors*/
+  .bg_white {
+    background: #fff;
+  }
+  .bg_primary {
+    background: #1668B2;
+  }
+  .bg_primary_fade {
+    background-color:rgba(22, 104, 178, 0.2)
+  }
+  .bg_primary_lt {
+    background: #4586C1;
+  }
+  .bg_secondary {
+    background: #EFC969 ;
+  }
+  .bg_secondary_lt {
+    background: #F5DB9B;
+  }
+  .bg_gray_lt {
+    background: #E8E8E8;
+  }
+  .white {
+    color: #fff;
+  }
+  .primary {
+    color: #1668B2;
+  }
+  .primary_lt {
+    color: #4586C1;
+  }
+  .secondary {
+    color: #EFC969 ;
+  }
+  .secondary_lt {
+    color: #F5DB9B;
+  }
+
+  /*Text*/
+  .font_2 {
+    font-family: 'winterthurcondensed', arial, sans-serif;
+  }
+  .xstext, h4 {
+    font-size: 80%;
+  }
+  .mdtext, h3 {
+    font-size: 110%;
+  }
+  .ltext, h2 {
+    font-size: 125%;
+  }
+  .xltext, h1 {
+    font-size: 150%;
+  }
+  .emphasize {
+    font-weight: bold;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .upper {
+    text-transform: uppercase;
+  }
+  .centertext {
+    text-align: center;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin:0;
+  }
+
+  /*Forms*/
+  input {
+    padding: 10px;
+    border: none;
+    background-color: #EDEDED;
+  }
+
+  /*Buttons*/
+  .primary_btn {
+    background-color: #04AC7E;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+  }
+
+  /*TopBar*/
+  .logo {
+    width: 300px; 
+    height: 70px;
+    margin-right: 20px;
+  }
+  .topbar_meal_form .searchbar {
+    width: 400px;
+  }
+
+  /*Shell*/
+  #shell {
+    width: 970px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .content_wrap,
+  .header {
+    margin-top: 10px;
+  }
+  .content_main {
+    width: 590px;
+  }
+  .content_side {
+    width: 320px;
+    margin-left: 10px;
+  }
+
+  /*Homepage*/
+  .stepone_search {
+    width: 300px;
+    padding: 5px;
+  }
+  .stepone_searchbtn {
+    padding: 5px 10px;
+  }
+
+</style>
+</head>
+
+<body class="bg_gray_lt">
+  <div id="shell" class="centerbox">
+    <div class="header bg_white box_md clear">
+      <div class="logo fl">Logo</div>
+      <div class="fl topbar_meal_form">
+        <form method="post" action="search.php?go" id="searchform">
+          <div class="topbar_meal_form_options box_sm">
+            <span class="primary font_2">Meal Options:</span>
+            <input type="checkbox" name="glutenfree" /> Gluten Free
+            <input type="checkbox" name="highprotein" /> High Protein
+            <input type="checkbox" name="lowprotein" /> Low Calorie
+          </div>
+          <div class="topbar_meal_form_searchbar box_sm">
+            <input type="text" class="searchbar" placeholder="Quick Search: Search for resteraunts" />
+            <input type="submit" class="primary_btn" value="Search" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="content_wrap clear">
+      <div class="content_main bg_primary white box_lg fl">
+        <h1 class="secondary_lt font_2">
+          Trying to stay healthy but you’re all your friends are going to a fast food restaurant? Do you have a gluten free allergy but you need to eat now and your choices are limited?
+        </h1>
+        <p class="white">
+          Don’t fret! We’re here to help give you the best option possible when it seems like you have no good options. Whether you’re on a gluten free diet, a high protein diet, or just trying to lose weight, we can help you maintain all your hardwork during these tough times.
+        </p>
+
+        <div class="box_md_tb xltext upper secondary font_2">
+          Step 1 Pick A Restaurant
+        </div>
+        <div class="step_one">
+          <div class="box_md_tb"><!--stepone search bar-->
+            <form>
+              <input type="text" name="stepone_search" class="stepone_search" placeholder="Can't find your restaurant? Search for it!" />
+              <input type="submit" name="stepone_search_submit" value="Search" class="primary_btn stepone_searchbtn mdtext" />
+            </form>
+          </div>
+          <form>
+            <div class="box_md_tb">
+              <ul class="list_4col clear">
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+                <li><input type="checkbox" name="stepone_restaurant" /> List Item</li>
+              </ul>
+            </div>
+            <div class="box_md_tb divider_tb">
+              <div class="box_md_tb xltext upper secondary font_2">
+                Step 2 Pick A Diet Preference
+              </div>
+              <div class="box_md_tb clear">
+                <div class="fl width_3col">
+                  <input type="checkbox" name="steptwo_diet"/> Gluten Free
+                </div>
+                <div class="fl width_3col">
+                  <input type="checkbox" name="steptwo_diet"/> High Protein
+                </div>
+                <div class="fl width_3col">
+                  <input type="checkbox" name="steptwo_diet"/> Low Calorie
+                </div>
+              </div>
+            </div>
+            <div class="box_md_tb centertext">
+              <span class="font_2 upper xltext secondary">
+                Show me my options
+              </span>
+              <input type="submit" name="home_submit" class="block centerblock margintop_md primary_btn" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="content_side bg_primary_fade white box_md fl">
+        <div class="bg_secondary white box_sm mdtext">
+          Latest News
+        </div>
+        <div class="box_md">
+          <ul class="list_2col clear">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+          </ul>
+        </div>
+        <div style="width:100%; height: 300px; background-color:#ddd; margin:15px 0;">
+          AD
+        </div>
+        <div class="bg_secondary white box_sm mdtext">
+          Latest News
+        </div>
+        <div class="box_md">
+          Are we missing your favorite restaurants and fast food chains? Send us an email with suggestions!
+          <div class="centertext margintop_md">
+            <a href="mailto:" class="primary_btn inline_block">Email Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer box_md">
+
+    </div>
+  </div>
+</body>
+</html>
